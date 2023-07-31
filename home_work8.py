@@ -51,7 +51,7 @@ def get_birthdays_per_week(users):
                 birthdays_dict[0].append(item["name"])
             elif weekday_birthday == 6: 
                 birthdays_dict[0].append(item["name"])
-        elif w < timedelta(days=0)  and w >= timedelta(days=-2) and 5<= weekday_now >= 6:   
+        elif w < timedelta(days=0)  and w >= timedelta(days=-2) and 5<= weekday_now <= 6:   
             if weekday_birthday == 6:
                 birthdays_dict[0].append(item["name"])
             elif weekday_birthday == 5:
