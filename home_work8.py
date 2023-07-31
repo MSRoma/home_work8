@@ -28,7 +28,6 @@ def get_birthdays_per_week(users):
     datetime_now = date.today() #date(year=2023, month=8, day=3) 
     weekday_now = datetime_now.weekday()
     year_now = datetime_now.year
-    print(weekday_now)
     for item in users:
         item.get('birthday')
         date_birthday = datetime.strptime(item.get('birthday'), '%Y-%m-%d')
